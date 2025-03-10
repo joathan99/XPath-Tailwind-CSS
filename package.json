@@ -1,0 +1,26 @@
+{
+  "name": "tarea1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx postcss src/styles.css -o dist/styles.css --watch",
+    "build": "npx postcss src/styles.css -o dist/styles.css",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.12",
+    "axios": "^1.8.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsdom": "^26.0.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.12"
+  },
+  "devDependencies": {
+    "postcss-cli": "^11.0.0"
+  },
+  "description": ""
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scraping Web</title>
+  <link href="dist/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+  <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg">
+    <h1 class="text-2xl font-bold text-blue-600 text-center mb-4">Web Scraping</h1>
+
+    <!-- Formulario -->
+    <form id="scrapingForm" class="space-y-4">
+      <div>
+        <label for="url" class="block text-gray-700 font-medium">URL de la página</label>
+        <input type="url" id="url" class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300" placeholder="https://ejemplo.com" required>
+      </div>
+      
+      <div>
+        <label for="xpath" class="block text-gray-700 font-medium">XPath</label>
+        <input type="text" id="xpath" class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300" placeholder="//h1" required>
+      </div>
+
+      <!-- Botón para realizar scraping -->
+      <button id="btn_Consultar" type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded-lg hover:bg-blue-700">
+        Realizar Scraping
+      </button>
+    </form>
+
+    <!-- Botón para borrar resultados -->
+    <button id="btn_Borrar" type="button" class="w-full bg-red-600 text-white font-bold py-2 rounded-lg hover:bg-red-700 mt-2">
+      Borrar Resultados
+    </button>
+
+    <!-- Área de Resultados -->
+    <div id="results" class="mt-6 p-4 bg-gray-50 border rounded-lg hidden">
+      <h2 class="text-lg font-bold text-gray-800">Resultados:</h2>
+      <ul id="resultsList" class="list-disc pl-5 text-gray-700"></ul>
+    </div>
+  </div>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
