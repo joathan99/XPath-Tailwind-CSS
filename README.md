@@ -1,7 +1,3 @@
-📌 README.md (Configuración del Proyecto y Desarrollo)
-md
-Copiar
-Editar
 # 🌐 Web Scraping con JavaScript  
 
 Este proyecto es una aplicación web que permite realizar scraping de contenido web de manera asíncrona desde el navegador. Los usuarios pueden ingresar una URL y un XPath para extraer información del HTML de una página y visualizar los resultados.
