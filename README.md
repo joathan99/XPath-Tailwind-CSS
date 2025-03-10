@@ -15,30 +15,30 @@ Para ejecutar este proyecto, asegúrate de tener instalado en tu sistema:
 ### **2️⃣ Clonar el Repositorio**  
 Si aún no tienes el proyecto en tu equipo, clónalo con:  
 
-```sh
+``sh
 git clone https://github.com/joathan99/XPath-Tailwind-CSS.git
 cd tu-repositorio
+``
+
 3️⃣ Instalación de Dependencias
 Ejecuta el siguiente comando para instalar Tailwind CSS y PostCSS:
 
-sh
-Copiar
-Editar
+``sh
 npm install
+``
+
 Esto instalará las librerías necesarias para compilar los estilos correctamente.
 
 4️⃣ Configuración de Tailwind CSS
 Para que Tailwind CSS funcione correctamente, configuramos el entorno de desarrollo siguiendo estos pasos:
 
 Instalamos Tailwind y PostCSS con:
-sh
-Copiar
-Editar
+``sh
 npm install tailwindcss @tailwindcss/postcss postcss
+``
+
 Creamos y configuramos el archivo postcss.config.mjs con el siguiente contenido:
 js
-Copiar
-Editar
 export default {
   plugins: {
     "@tailwindcss/postcss": {},
@@ -46,16 +46,14 @@ export default {
 }
 En styles.css, importamos Tailwind CSS con:
 css
-Copiar
-Editar
 @import "tailwindcss";
 5️⃣ Compilación de los Estilos
 Para generar el archivo dist/styles.css, ejecutamos:
 
-sh
-Copiar
-Editar
+``sh
 npm run dev
+``
+
 Esto iniciará el proceso de compilación de los estilos y generará el CSS listo para usar.
 
 📌 Ejecución del Proyecto
@@ -63,15 +61,12 @@ Esto iniciará el proceso de compilación de los estilos y generará el CSS list
 Si deseas visualizar la aplicación en un entorno local, puedes usar Five Server o Live Server en VS Code.
 Si no tienes Live Server instalado, puedes hacerlo con:
 
-sh
-Copiar
-Editar
+``sh
 npm install -g live-server
+``
+
 Luego, inicia el servidor con:
 
-sh
-Copiar
-Editar
 live-server
 Esto abrirá automáticamente index.html en tu navegador.
 
